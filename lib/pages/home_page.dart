@@ -12,13 +12,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         title: const Text("OK! LETS BUILD"),
       ),
-      body:Center(
-        child:column[
-
-        ]
+      body:Column(
+        children: [
+          
+        ],
       )
+        
+
+        
+      
     );
   }
 }
