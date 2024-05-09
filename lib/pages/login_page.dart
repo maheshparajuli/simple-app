@@ -36,9 +36,7 @@ class _LoginPageState extends State<LoginPage> {
             key: _formKey,
             child: Column(
               children: [
-                const SizedBox(
-                  height:200
-                ),
+                const SizedBox(height: 200),
                 const Text(
                   "welcome ",
                   style: TextStyle(
@@ -47,7 +45,8 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
                   child: Column(
                     children: [
                       TextFormField(

@@ -3,7 +3,6 @@ import "package:flutterapp/widgets/routes.dart";
 import "package:flutterapp/pages/home_page.dart";
 import "package:flutterapp/pages/login_page.dart";
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -20,10 +19,10 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: MyRoutes.loginRoute,
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => LoginPage(),
-        MyRoutes.homeRoute: (context) => const HomePage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
         MyRoutes.loginRoute: (context) => LoginPage()
       },
     );
