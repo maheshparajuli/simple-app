@@ -23,6 +23,7 @@ class _HomePageState extends State<HomePage> {
               itemCount: todos.length,
               itemBuilder: (BuildContext context, int index) {
                 return ListTile(
+                  
                   title: Text(todos[index].task),
                   leading: Checkbox(
                     value: todos[index].completed,
@@ -65,7 +66,8 @@ class _HomePageState extends State<HomePage> {
                       controller.clear();
                     });
                   },
-                  child: Text('Add Task'),
+                  child: Text('Add Task',
+                  ),
                 ),
               ],
             ),
